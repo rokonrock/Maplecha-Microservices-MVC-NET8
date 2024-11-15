@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35013.160
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FrontEnd", "FrontEnd", "{81CD9194-CA07-4B42-ACE1-AB8503E0AFE5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Gateway", "Gateway", "{24430E5D-E278-4968-8BF6-C0438F8A6AF3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Integration", "Integration", "{D4CD5EFA-51BE-4C48-8806-76BEF0EF8782}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{5B775C3B-028F-48A5-9675-F6DF54DA91FA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Maplecha.Services.CouponAPI", "Maplecha.Services.CouponAPI\Maplecha.Services.CouponAPI.csproj", "{1F0F91B5-9F39-4E59-930F-38F9E0150AD3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1F0F91B5-9F39-4E59-930F-38F9E0150AD3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F0F91B5-9F39-4E59-930F-38F9E0150AD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F0F91B5-9F39-4E59-930F-38F9E0150AD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F0F91B5-9F39-4E59-930F-38F9E0150AD3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1F0F91B5-9F39-4E59-930F-38F9E0150AD3} = {5B775C3B-028F-48A5-9675-F6DF54DA91FA}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {06DABF6D-D230-4F47-AE57-10EF799E092B}
+	EndGlobalSection
+EndGlobal
