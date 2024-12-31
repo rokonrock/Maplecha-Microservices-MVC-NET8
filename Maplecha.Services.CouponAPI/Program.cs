@@ -1,3 +1,5 @@
+using AutoMapper;
+using Maplecha.Services.CouponAPI;
 using Maplecha.Services.CouponAPI.Data;
 using Microsoft.EntityFrameworkCore;
 
@@ -6,7 +8,13 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("MaplechaDBConnection")));
+{
+    options.UseSqlServer(builder.Configuration.GetConnectionString("MaplechaDBConnection"));
+});
+
+IMapper mapper = MappingConfig.RegisterMaps().CreateMapper();
+builder.Services.AddSingleton(mapper);
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
@@ -44,3 +52,4 @@ void ApplyMigration()
         }
     }
 }
+
