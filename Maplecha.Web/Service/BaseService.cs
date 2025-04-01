@@ -22,7 +22,14 @@ namespace Maplecha.Web.Service
             {    
                 HttpClient client = _httpClientFactory.CreateClient("MaplechaAPI");
                 HttpRequestMessage message = new();
-                message.Headers.Add("Content-Type", "application/json");
+                if (requestDto.ContentType == ContentType.MultipartFormData)
+                {
+                    message.Headers.Add("Accept", "*/*");
+                }
+                else
+                {
+                    message.Headers.Add("Accept", "application/json");
+                }
                 //token
 
                 message.RequestUri = new Uri(requestDto.Url);
